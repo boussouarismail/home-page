@@ -72,6 +72,8 @@ i {
 section {
     padding: 4em 8em;
     margin: oem 10em;
+    display: flex;
+    flex-direction: column;
 }
 
 img.myPhoto {
@@ -82,6 +84,7 @@ img.myPhoto {
 section.main {
     padding: 6em 0px;
     display: flex;
+    flex-direction: row;
     justify-content:center;
     flex-wrap: wrap;
     min-height: 100vh;
@@ -172,6 +175,9 @@ section.main {
     gap: 1.2    em;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
+    justify-self:center;
+    flex-grow: 1;
 }
 
 .card{
@@ -270,6 +276,16 @@ section.main {
 
 .more_details:hover {
     color: var(--hover_color);
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+.title {
+    text-align: center;
 }
 
 .contact .icon {
